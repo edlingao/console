@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.console {
+  background: black;
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.console.matrix .console-line {
+  color: #9c0705;
+}
+
+.console-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: yellow;
+}
+
+.blink {
+  -webkit-animation: blink 1s linear infinite alternate both;
+          animation: blink 1s linear infinite alternate both;
+}
+
+.writable-line {
+  outline: none;
+  caret-color: transparent;
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

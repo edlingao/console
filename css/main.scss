@@ -1,0 +1,49 @@
+$red-color: #9c0705;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.console{
+  background: black;
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding: 1rem;
+  overflow-y: auto;
+  &.matrix{
+    .console-line{
+      color:  $red-color;
+    }
+  }
+}
+.console-line{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: yellow;
+}
+
+.blink{
+  animation: blink 1s linear infinite alternate both;
+}
+.writable-line{
+  outline: none;
+  caret-color: transparent;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@keyframes blink{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
