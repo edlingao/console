@@ -19,12 +19,16 @@ $red-color: #9c0705;
       color:  $red-color;
     }
   }
+  .error{
+    color: $red-color;
+  }
 }
 .console-line{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: yellow;
+
 }
 
 .blink{
