@@ -1,0 +1,12 @@
+This is a simple JS console
+
+
+# To add new Commands
+
+> Add the command name into the dictionary
+    * js/dictionary.js
+        * add a key with the command name
+        * add a callback to the code of your command
+    * js/commands.js
+        *Create a static funcion with the command name
+And thats it!!
